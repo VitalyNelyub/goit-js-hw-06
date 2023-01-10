@@ -13,12 +13,12 @@ const images = [
   },
 ];
 
-// const galleryEl = document.querySelector(".gallery");
+const galleryEl = document.querySelector(".gallery");
 
-// const addImgEl = images.map((image) => {
-//   const createLi = document.createElement("li");
-//   const createImg = document.createElement("img");
-//   // addImgEl.insertAdjacentHTML();
-
-//   return createLi;
-// });
+const photoEl = images.map(
+  (image) =>
+    `<li class="photo-list">
+    <img class="photo" src="${image.url}" alt="${image.alt}"></li>`
+);
+galleryEl.insertAdjacentHTML("beforeend", photoEl.join(""));
+console.log(photoEl);

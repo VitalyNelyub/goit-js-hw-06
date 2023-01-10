@@ -15,3 +15,4 @@ for (const elem of totalEl) {
   console.log(`Category: ${categories}`);
   console.log(`Elements: ${totalCategories}`);
 }
+
