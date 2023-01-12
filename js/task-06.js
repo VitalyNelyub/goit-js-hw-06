@@ -9,6 +9,7 @@ function validLength() {
     inputFormEl.classList.add("valid");
     inputFormEl.classList.remove("invalid");
   } else {
+    console.log(alert("В полі має бути 6 символів"))
     inputFormEl.classList.remove("valid");
     inputFormEl.classList.add("invalid");
   }
