@@ -14,7 +14,7 @@ function submitForm(event) {
   } else {
     dataFormAfterSubmit.email = USER_EMAIL;
     dataFormAfterSubmit.password = USER_PASSWORD;
+      console.table(dataFormAfterSubmit);
+      formEl.reset();
   }
-  console.table(dataFormAfterSubmit);
-  formEl.reset();
 }
