@@ -6,15 +6,15 @@ const dataFormAfterSubmit = {};
 
 function submitForm(event) {
   event.preventDefault();
-  const EMAIL = event.currentTarget.elements.email.value;
-  const PASSWORD = event.currentTarget.elements.password.value;
+  const USER_EMAIL = event.currentTarget.elements.email.value;
+  const USER_PASSWORD = event.currentTarget.elements.password.value;
 
-  if (EMAIL === "" || PASSWORD === "") {
-    alert("Заповніть всі поля форми");
+  if (USER_EMAIL === "" || USER_PASSWORD === "") {
+    alert("Обов'язково заповніть всі поля форми");
   } else {
-    dataFormAfterSubmit.email = EMAIL;
-    dataFormAfterSubmit.password = PASSWORD;
+    dataFormAfterSubmit.email = USER_EMAIL;
+    dataFormAfterSubmit.password = USER_PASSWORD;
   }
-  console.log("Данні користувача з форми: ", dataFormAfterSubmit);
+  console.table(dataFormAfterSubmit);
   formEl.reset();
 }
